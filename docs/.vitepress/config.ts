@@ -7,6 +7,16 @@ export default defineConfig({
   lastUpdated: true,
   metaChunk: true,
   base: "/document-style-guide/",
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "https://avatars.githubusercontent.com/u/212184878",
+      },
+    ],
+  ],
   themeConfig: {
     docFooter: {
       prev: "上一篇",
