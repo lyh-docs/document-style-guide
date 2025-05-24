@@ -1,5 +1,4 @@
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
 name: Deploy VitePress site to GitHub Pages
 
 on:
@@ -58,7 +57,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
+    name: deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
